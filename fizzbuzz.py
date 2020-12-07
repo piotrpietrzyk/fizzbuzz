@@ -1,7 +1,7 @@
 def validate(start_value, end_value, prompt):
     while True:
         try:
-            answer = int(input(f'Enter {prompt} range:'))
+            answer = int(input(f'Enter {prompt} range: '))
             assert start_value < answer < end_value
             return answer
         except ValueError:
